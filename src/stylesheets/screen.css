@@ -71,27 +71,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 8, ../sass/screen.scss */
 html {
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, '微软雅黑', Arial, sans-serif;
+  font-size: 16px;
 }
 
-/* line 12, ../sass/screen.scss */
-header {
+/* line 13, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 18, ../sass/screen.scss */
+.n-header {
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 65px;
+  height: 75px;
   background-color: #00bcd4;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 .n-inputbox {
   padding: 9px 7px;
   border: 1px solid #d8d8d8;
   outline: none;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .n-inputbotton {
   cursor: pointer;
   padding: 0;
@@ -99,17 +106,51 @@ header {
   border: none;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .n-inputbotton.search {
-  height: 33px;
+  height: 38px;
   width: 70px;
   color: #ffffff;
   background-color: #A5DFE5;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .n-inputbox.search {
   border: none;
-  height: 15px;
+  height: 20px;
   width: 350px;
+}
+
+/* line 58, ../sass/screen.scss */
+.n-main {
+  width: 1200px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 66, ../sass/screen.scss */
+.n-main-item {
+  float: left;
+  width: 20%;
+  height: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 72, ../sass/screen.scss */
+.n-main-item a {
+  display: block;
+  line-height: 40px;
+}
+/* line 75, ../sass/screen.scss */
+.n-main-item a:hover {
+  background-color: #f5f5f5;
+}
+/* line 78, ../sass/screen.scss */
+.n-main-item a img {
+  margin: 0 5px 0 15px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
 }
