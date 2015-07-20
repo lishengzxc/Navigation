@@ -1,0 +1,19 @@
+{
+  "name": "nav",
+  "version": "1.0.0",
+  "description": "index of my browser ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lishengzxc/Navigation.git"
+  },
+  "author": "eric@lishengcn.cn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lishengzxc/Navigation/issues"
+  },
+  "homepage": "https://github.com/lishengzxc/Navigation#readme"
+}

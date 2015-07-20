@@ -1,0 +1,50 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+html {
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, '微软雅黑', Arial, sans-serif;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 65px;
+  background-color: #00bcd4;
+}
+
+.n-inputbox {
+  padding: 9px 7px;
+  border: 1px solid #d8d8d8;
+  outline: none;
+}
+
+.n-inputbotton {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.n-inputbotton {
+  &.search {
+    height: 33px;
+    width: 70px;
+    color: #ffffff;
+    background-color: #A5DFE5;
+  }
+}
+
+.n-inputbox {
+  &.search {
+    border: none;
+    height: 15px;
+    width: 350px;
+  }
+}
