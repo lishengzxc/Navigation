@@ -29,12 +29,18 @@ var Header = React.createClass({
         <form className="n-form" action="http://www.baidu.com/s">
           <input className="n-inputbox search" type="text" autofocus="" name="wd"/>
           <input className="n-inputbotton search" type="submit" value="搜索"/>
-          <label className="n-label" for="google"><input className="n-radio" type="radio" value="google" name="se" id="google" />Google</label>
+          <label className="n-label" for="google"><input className="n-radio" type="radio" value="google" name="se" id="google" onClick={this.a}/>Google</label>
           <label className="n-label" for="baidu"><input className="n-radio" type="radio" value="baidu" name="se" id="baidu" />Baidu</label>
         </form>
       </header>
     )
+  },
+  a: function(e) {
+    //alert(1);
+    e.stopPropagation();
+    console.log(e);
   }
+
 });
 
 React.render(
