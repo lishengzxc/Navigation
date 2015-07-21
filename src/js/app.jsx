@@ -14,7 +14,7 @@ var UrlItem = React.createClass({
   render: function () {
     return (
       <li className="n-main-item">
-        <a href="http://www.baidu.com">
+        <a href="http://www.baidu.com" target="_blank">
           <img src="https://ss0.bdstatic.com/l4oZeXSm1A5BphGlnYG/icon/93364.png" alt=""/>
         baidu</a>
       </li>
@@ -26,9 +26,11 @@ var Header = React.createClass({
   render: function () {
     return (
       <header className="n-header">
-        <form className="n-form" action="">
-          <input className="n-inputbox search" type="text" autofocus=""/>
+        <form className="n-form" action="http://www.baidu.com/s">
+          <input className="n-inputbox search" type="text" autofocus="" name="wd"/>
           <input className="n-inputbotton search" type="submit" value="搜索"/>
+          <label className="n-label" for="google"><input className="n-radio" type="radio" value="google" name="se" id="google" />Google</label>
+          <label className="n-label" for="baidu"><input className="n-radio" type="radio" value="baidu" name="se" id="baidu" />Baidu</label>
         </form>
       </header>
     )
