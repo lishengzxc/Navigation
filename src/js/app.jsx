@@ -5,7 +5,7 @@ var UrlBox = React.createClass({
       urlItems.push(<UrlItem key={i}/>)
     }
     return (
-      <ul className="n-main">{urlItems}</ul>
+      <div><ul className="n-main">{urlItems}</ul><ToTop/></div>
     );
   }
 });
@@ -32,15 +32,22 @@ var Header = React.createClass({
           <label className="n-label" for="google"><input className="n-radio" type="radio" value="google" name="se" id="google" onClick={this.a}/>Google</label>
           <label className="n-label" for="baidu"><input className="n-radio" type="radio" value="baidu" name="se" id="baidu" />Baidu</label>
         </form>
+        <button className="addbutton"><i className="fa fa-plus-circle"></i></button>
       </header>
     )
   },
   a: function(e) {
-    //alert(1);
     e.stopPropagation();
     console.log(e);
   }
+});
 
+var ToTop = React.createClass({
+  render: function () {
+    return (
+      <button className="totop"><i className="fa fa-arrow-up"></i></button>
+    )
+  }
 });
 
 React.render(
@@ -50,3 +57,4 @@ React.render(
 React.render(
   <UrlBox/>, document.getElementById('urlbox')
 );
+
