@@ -215,3 +215,33 @@ a {
   z-index: 233;
   background-color: rgba(0, 0, 0, 0.5);
 }
+/* line 140, ../sass/screen.scss */
+.pop form {
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 170px;
+  background-color: #fff;
+}
+/* line 148, ../sass/screen.scss */
+.pop form div {
+  margin-bottom: 10px;
+}
+/* line 150, ../sass/screen.scss */
+.pop form div input {
+  width: 330px;
+}
+/* line 154, ../sass/screen.scss */
+.pop form button {
+  float: right;
+  margin-right: 5px;
+  border: none;
+  outline: none;
+  width: 70px;
+  height: 35px;
+  color: #ffffff;
+  background-color: #00bcd4;
+  cursor: pointer;
+}
