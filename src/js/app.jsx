@@ -24,6 +24,9 @@ var UrlItem = React.createClass({
 });
 
 var Header = React.createClass({
+  toggleAddUrlBox: function (e) {
+    
+  },
   render: function () {
     return (
       <header className="n-header">
@@ -56,9 +59,6 @@ var AddUrl = React.createClass({
     return {
 
     }
-  },
-  toggleAddUrlBox: function (e) {
-    alert(1)
   },
   render: function () {
     return (
