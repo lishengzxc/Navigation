@@ -104,7 +104,7 @@ a {
   position: absolute;
   top: 13px;
   right: 20px;
-  z-index: 2333;
+  z-index: 23;
   width: 40px;
   height: 40px;
   background-color: #00bcd4;
@@ -189,7 +189,7 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 2333;
+  z-index: 23;
   width: 40px;
   height: 40px;
   background-color: #00bcd4;
@@ -203,4 +203,15 @@ a {
 .totop i {
   color: #ffffff;
   font-size: 20px;
+}
+
+/* line 132, ../sass/screen.scss */
+.pop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 65px;
+  z-index: 233;
+  background-color: rgba(0, 0, 0, 0.5);
 }
