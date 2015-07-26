@@ -99,9 +99,10 @@ a {
   margin-left: 2px;
   color: #ffffff;
 }
-/* line 33, ../sass/screen.scss */
-.n-header .addbutton {
-  position: absolute;
+
+/* line 35, ../sass/screen.scss */
+.addbutton {
+  position: fixed;
   top: 13px;
   right: 20px;
   z-index: 23;
@@ -114,8 +115,8 @@ a {
   outline: none;
   cursor: pointer;
 }
-/* line 46, ../sass/screen.scss */
-.n-header .addbutton i {
+/* line 48, ../sass/screen.scss */
+.addbutton i {
   color: #ffffff;
   font-size: 20px;
 }

@@ -11,6 +11,7 @@ var UrlBox = React.createClass({
 });
 
 var UrlItem = React.createClass({
+
   render: function () {
     return (
       <li className="n-main-item">
@@ -32,7 +33,7 @@ var Header = React.createClass({
           <label className="n-label" for="google"><input className="n-radio" type="radio" value="google" name="se" id="google" onClick={this.a}/>Google</label>
           <label className="n-label" for="baidu"><input className="n-radio" type="radio" value="baidu" name="se" id="baidu" />Baidu</label>
         </form>
-        <button className="addbutton"><i className="fa fa-plus-circle"></i></button>
+        <button className="addbutton" onClick={this.toggleAddUrlBox}><i className="fa fa-plus-circle"></i></button>
       </header>
     )
   },
@@ -51,13 +52,21 @@ var ToTop = React.createClass({
 });
 
 var AddUrl = React.createClass({
+  getInitialState: function() {
+    return {
+
+    }
+  },
+  toggleAddUrlBox: function (e) {
+    alert(1)
+  },
   render: function () {
     return (
       <div className="pop">
         <form action="">
           <div><input className="n-inputbox " type="text" placeholder="书签名"/></div>
           <div><input className="n-inputbox " type="text" placeholder="书签地址"/></div>
-          <div><input className="n-inputbox " type="text" placeholder="书签ICON"/></div>
+          <div><input className="n-inputbox " type="text" placeholder="书签Icon"/></div>
           <button type="submit">添加</button>
         </form>
       </div>

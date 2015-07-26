@@ -30,26 +30,26 @@ a {
       color: #ffffff;
     }
   }
-  .addbutton {
-    position: absolute;
-    top: 13px;
-    right: 20px;
-    z-index: 23;
-    width: 40px;
-    height: 40px;
-    background-color: rgb(0, 188, 212);
-    text-align: center;
-    line-height: 40px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    i {
-      color: #ffffff;
-      font-size: 20px;
-    }
-  }
 }
 
+.addbutton {
+  position: fixed;
+  top: 13px;
+  right: 20px;
+  z-index: 23;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(0, 188, 212);
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  i {
+    color: #ffffff;
+    font-size: 20px;
+  }
+}
 
 .n-inputbox {
   padding: 9px 7px;
