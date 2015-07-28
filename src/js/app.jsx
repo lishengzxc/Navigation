@@ -25,7 +25,7 @@ var UrlItem = React.createClass({
 
 var Header = React.createClass({
   toggleAddUrlBox: function (e) {
-    
+    alert(1);
   },
   render: function () {
     return (
