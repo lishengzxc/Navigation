@@ -74,11 +74,25 @@ var AddUrl = React.createClass({
   }
 });
 
-React.render(
-  <Header/>, document.getElementById('header')
-);
+var App = React.createClass({
+  render: function () {
+    return (
+      <div>
+        <Header/><UrlBox/>
+      </div>
+    )
+  }
+});
 
 React.render(
-  <UrlBox/>, document.getElementById('urlbox')
+  <App/>, document.getElementById('app')
 );
+
+//React.render(
+//  <Header/>, document.getElementById('header')
+//);
+//
+//React.render(
+//  <UrlBox/>, document.getElementById('urlbox')
+//);
 
