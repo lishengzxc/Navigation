@@ -39,10 +39,6 @@ var Header = React.createClass({
         <button className="addbutton" onClick={this.toggleAddUrlBox}><i className="fa fa-plus-circle"></i></button>
       </header>
     )
-  },
-  a: function(e) {
-    e.stopPropagation();
-    console.log(e);
   }
 });
 
@@ -88,11 +84,4 @@ React.render(
   <App/>, document.getElementById('app')
 );
 
-//React.render(
-//  <Header/>, document.getElementById('header')
-//);
-//
-//React.render(
-//  <UrlBox/>, document.getElementById('urlbox')
-//);
 
