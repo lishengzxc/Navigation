@@ -5,7 +5,11 @@ var UrlBox = React.createClass({
       urlItems.push(<UrlItem key={i}/>)
     }
     return (
-      <div><ul className="n-main">{urlItems}</ul><ToTop/><AddUrl/></div>
+      <div>
+        <ul className="n-main">{urlItems}</ul>
+        <ToTop/>
+        <AddUrl/>
+      </div>
     );
   }
 });
@@ -33,10 +37,16 @@ var Header = React.createClass({
         <form className="n-form" action="http://www.baidu.com/s">
           <input className="n-inputbox search" type="text" autofocus="" name="wd"/>
           <input className="n-inputbotton search" type="submit" value="搜索"/>
-          <label className="n-label" for="google"><input className="n-radio" type="radio" value="google" name="se" id="google" onClick={this.a}/>Google</label>
-          <label className="n-label" for="baidu"><input className="n-radio" type="radio" value="baidu" name="se" id="baidu" />Baidu</label>
+          <label className="n-label" for="google">
+            <input className="n-radio" type="radio" value="google" name="se" id="google"/>
+          Google</label>
+          <label className="n-label" for="baidu">
+            <input className="n-radio" type="radio" value="baidu" name="se" id="baidu" />
+          Baidu</label>
         </form>
-        <button className="addbutton" onClick={this.toggleAddUrlBox}><i className="fa fa-plus-circle"></i></button>
+        <button className="addbutton" onClick={this.toggleAddUrlBox}>
+          <i className="fa fa-plus-circle"></i>
+        </button>
       </header>
     )
   }
@@ -45,24 +55,30 @@ var Header = React.createClass({
 var ToTop = React.createClass({
   render: function () {
     return (
-      <button className="totop"><i className="fa fa-arrow-up"></i></button>
+      <button className="totop">
+        <i className="fa fa-arrow-up"></i>
+      </button>
     )
   }
 });
 
 var AddUrl = React.createClass({
-  getInitialState: function() {
-    return {
-
-    }
+  getInitialState: function () {
+    return {}
   },
   render: function () {
     return (
       <div className="pop">
         <form action="">
-          <div><input className="n-inputbox " type="text" placeholder="书签名"/></div>
-          <div><input className="n-inputbox " type="text" placeholder="书签地址"/></div>
-          <div><input className="n-inputbox " type="text" placeholder="书签Icon"/></div>
+          <div>
+            <input className="n-inputbox " type="text" placeholder="书签名"/>
+          </div>
+          <div>
+            <input className="n-inputbox " type="text" placeholder="书签地址"/>
+          </div>
+          <div>
+            <input className="n-inputbox " type="text" placeholder="书签Icon"/>
+          </div>
           <button type="submit">添加</button>
         </form>
       </div>
@@ -74,7 +90,8 @@ var App = React.createClass({
   render: function () {
     return (
       <div>
-        <Header/><UrlBox/>
+        <Header/>
+        <UrlBox/>
       </div>
     )
   }
