@@ -53,9 +53,12 @@ var Header = React.createClass({
 });
 
 var ToTop = React.createClass({
+  scrollToTop: function (e) {
+    alert(1);
+  },
   render: function () {
     return (
-      <button className="totop">
+      <button className="totop" onClick={this.scrollToTop}>
         <i className="fa fa-arrow-up"></i>
       </button>
     )
