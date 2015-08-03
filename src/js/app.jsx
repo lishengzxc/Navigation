@@ -54,7 +54,9 @@ var Header = React.createClass({
 
 var ToTop = React.createClass({
   scrollToTop: function (e) {
-    document.getElementById('app').scrollTop = 0;
+    var toTop = function () {
+
+    }
   },
   render: function () {
     return (
