@@ -54,9 +54,16 @@ var Header = React.createClass({
 
 var ToTop = React.createClass({
   scrollToTop: function (e) {
+    var app = document.getElementById('app');
     var toTop = function () {
-
-    }
+      if (app.scrollTop - 20 <= 0) {
+        app.scrollTop = 0;
+      } else {
+        app.scrollTop -= 20;
+        requestAnimationFrame(toTop);
+      }
+    };
+    requestAnimationFrame(toTop);
   },
   render: function () {
     return (
