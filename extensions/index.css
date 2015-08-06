@@ -110,3 +110,9 @@ a:visited {
   padding-left: 25px;
 }
 
+.avatar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
