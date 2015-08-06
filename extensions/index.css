@@ -21,8 +21,9 @@ a:visited {
   position: fixed;
   width: 100%;
   height: 35px;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ebebeb;
+  background-color: #24F4F5;
+  border-bottom: 1px solid #24ebec;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 }
 
 .nv-header p {
