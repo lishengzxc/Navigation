@@ -1,5 +1,6 @@
 body {
-  font: 14px arial;
+  font: 14px PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;;
+  text-rendering: optimizelegibility;
 }
 
 body, p {
@@ -7,13 +8,13 @@ body, p {
 }
 
 a {
-  color: #919191;
+  color: #0089dc;
   text-decoration: none;
   font-weight: normal;
 }
 
 a:visited {
-  color: #919191;
+  color: #0089dc;
 }
 
 .nv-header {
