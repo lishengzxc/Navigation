@@ -1,6 +1,7 @@
 body {
   font: 14px PingFang SC,Lantinghei SC,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;;
   text-rendering: optimizelegibility;
+  background-color: rgb(251, 252, 250);
 }
 
 body, p {
